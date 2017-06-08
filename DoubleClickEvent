@@ -1,0 +1,16 @@
+    If Not Intersect(Target, Columns(3)) Is Nothing Then
+        If Target.Font.Color = vbRed Then
+            Target.Font.Color = vbBlack
+            
+        Else
+            Target.Font.Color = vbRed
+        End If
+        
+        Cancel = True
+        
+    End If
+    
+    ##If want to change background fill instaed, then:
+    Target.Interior.ColorIndex = [color#]
+    #OR
+    Target.Interior.Color = vbYellow
